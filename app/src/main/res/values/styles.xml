@@ -1,0 +1,808 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="AppTheme_Splash" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">#dedede</item>
+        <!--
+                <item name="android:windowTranslucentStatus">true</item>
+        -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+    <style name="splash_title_home" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">47dp</item>
+        <item name="fontFamily">font/roboto_bold</item>
+
+
+    </style>
+
+    <style name="splash_subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">font/roboto_regular</item>
+    </style>
+
+    <style name="login_module_heading" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">font/roboto_bold</item>
+    </style>
+
+    <style name="login_module_subheading" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/lavender_gray_c7c7c7</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">font/roboto_regular</item>
+    </style>
+
+    <style name="phonecode_loin" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">font/roboto_regular</item>
+    </style>
+
+    <style name="phonnumber_loin" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">font/roboto_regular</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorHint">#FF98989F</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textDirection">locale</item>
+
+    </style>
+
+    <style name="tv_continue" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14dp</item>
+        <item name="fontFamily">font/roboto_medium</item>
+        <item name="background">@drawable/signin_bg</item>
+    </style>
+
+    <style name="dont_want_login" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/lavender_gray_c7c7c7</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">font/roboto_regular</item>
+    </style>
+
+    <style name="dont_want_login_click" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">font/roboto_regular</item>
+    </style>
+
+    <style name="onboard_header" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">font/roboto_medium</item>
+    </style>
+
+    <style name="onboard_subheader" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="fontFamily">font/roboto_medium</item>
+    </style>
+
+    <style name="skip" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/lavender_gray_c7c7c7</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">1dp</item>
+        <item name="fontFamily">font/roboto_regular</item>
+    </style>
+
+    <style name="alert_dialog_heading" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">font/roboto_bold</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="alert_dialog_subheading" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:lineSpacingExtra">1dp</item>
+        <item name="fontFamily">font/roboto_regular</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyAlertDialogTheme" parent="android:style/Theme.Dialog">
+        <item name="colorAccent">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="tv_continue_location" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">11dp</item>
+        <item name="fontFamily">font/roboto_bold</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <!-- <Item name="fontFamily">@font/opensans_regular</Item>-->
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textAppearance">@style/BottomNavigationText</item>
+
+
+    </style>
+
+    <style name="BottomNavigationText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+
+
+    </style>
+
+    <style name="Widget.BottomNavigationViewSelect" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">12dp</item>
+        <item name="fontFamily">font/roboto_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Picker">
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFABABAB</item>
+    </style>
+
+    <style name="RadioBtnTextstyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="itemTextviewCategory" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ratingbar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorPrimaryDark">@color/yellow</item>
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="colorControlNormal">@color/darkgray</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="tv_address" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="tv_address_title" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/light_gray_cfced5</item>
+    </style>
+
+    <style name="recent_row_header" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/light_gray_cfced5</item>
+    </style>
+
+    <style name="feature_item" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="recent_row" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="checkedTextview" parent="android:Widget.Holo.CheckedTextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="checkedTextViewStyle">@style/checkedTExt</item>
+    </style>
+
+    <style name="checkedTExt" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="filter_text" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="filter_reset" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="filter_subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="toolbae_header" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SearchView_editext" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">font/roboto_regular</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorHint">#FFABABAB</item>
+        <item name="android:textDirection">locale</item>
+
+    </style>
+
+    <style name="tv_search_result_recommended" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/light_gray_cfced5</item>
+    </style>
+
+    <style name="kitchen_name" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="rater_name" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="item_name" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="kitchen_address" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="notiication_title" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="notiication_message" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/colorGrayMedium</item>
+    </style>
+
+    <style name="notiication_date" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="NonotificationTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NonotificationSubTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="item_price" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="feature_item_price" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/ashgrayb9b9b9</item>
+    </style>
+
+    <style name="feature_item_title" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="item_add" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="kitchen_rate" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="tvdistance" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="tabCustomStyle" parent="TextAppearance.Design.Tab">
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="AppTheme_Splash">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="review_date" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/silverb8bbc6</item>
+    </style>
+
+    <style name="review_message" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/whitesmokef6f6f6</item>
+    </style>
+
+    <style name="review_number" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="feedback_header" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/whitesmokef8f8f8</item>
+    </style>
+
+    <style name="feedback_subheader" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/lavender_gray_c7c7c7</item>
+    </style>
+
+    <style name="editext_input" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">start|top</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textColorHint">@color/taupegray</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="free_delivery" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/darkjunglegreen2524427</item>
+    </style>
+
+    <style name="time" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/ashgrayb9b9b9</item>
+    </style>
+
+    <style name="second_row_text1" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="second_row_text2" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/lavender_gray_c7c7c7</item>
+    </style>
+
+
+    <style name="infotitle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="mondaytofriday" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Description" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="Descriptionitem" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/light_gray_cfced5</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="price" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">23dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="quantity" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="radioBtnSingle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="item_price_light" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="item_total" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="tv_addtocart" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10dp</item>
+        <item name="fontFamily">font/roboto_medium</item>
+    </style>
+
+    <!--TOOLBAR WHEN IT IN INTIAL STAGE-->
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">font/roboto_bold</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--TOOLBAR WHEN IT IN INTIAL STAGE-->
+
+    <style name="ExpandedAppBarPRODUCT" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">font/roboto_bold</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+
+    <!--TOOLBAR TEXT WHEN COMES UP-->
+    <style name="CollapsedAppBarPRODUCT" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--TOOLBAR TEXT WHEN COMES UP-->
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:windowBackground">@color/layout_bg</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="order_details_kitchenname" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/whitesmokef8f8f8</item>
+    </style>
+
+    <style name="order_details_date" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="order_details_deliverat" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/light_gray_cfced5</item>
+    </style>
+
+    <style name="order_details_address" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/light_gray_cfced5</item>
+    </style>
+
+    <style name="order_details_orderedItems" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Grand_Total" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="tv_trackorder" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14dp</item>
+        <item name="fontFamily">font/roboto_medium</item>
+    </style>
+
+    <style name="profileheading" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="user_name" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="user_email" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/trollygray78817e</item>
+    </style>
+
+    <style name="profile_list_items" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="addAddress" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="default_address" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="mobileNumber" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="address" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/ashgrayb9b9b9</item>
+    </style>
+
+    <style name="TV_setDelivery_location" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/whitesmokef8f7f8</item>
+    </style>
+
+    <style name="TV_yourLocationLabel" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="TV_LocationDetails" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColorHint">@color/light_gray_cfced5</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/_10sdp</item>
+        <item name="android:paddingBottom">@dimen/_10sdp</item>
+        <item name="android:paddingStart">@dimen/_15sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="backgroundTint">@color/onyx0f0f0f</item>
+
+    </style>
+
+    <style name="order_kitchen_name" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="order_date" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/lavender_gray_c7c7c7</item>
+    </style>
+
+    <style name="order_itemlabel" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/lavender_gray_c7c7c7</item>
+    </style>
+
+    <style name="order_itemName" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="order_status" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="addnewcard" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="addyourcard" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/whitesmokef8f8f8</item>
+    </style>
+
+    <style name="addyourcardsubTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/lavender_gray_c7c7c7</item>
+    </style>
+
+    <style name="CardNumber" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="save" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_medium</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/whitesmokef8f8f8</item>
+    </style>
+
+    <style name="MyDetails" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/whitesmokef8f8f8</item>
+    </style>
+
+    <style name="OtherDetails" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_light</item>
+        <item name="android:textSize">14dp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/taupegray</item>
+    </style>
+
+    <style name="Profile_input_field" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColorHint">@color/light_gray_cfced5</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/_10sdp</item>
+        <item name="android:paddingBottom">@dimen/_10sdp</item>
+        <item name="android:paddingStart">@dimen/_15sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="backgroundTint">@color/darkjungleff1b1b1b</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Rgtab" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">font/roboto_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="paddingStart">@dimen/_17sdp</item>
+        <item name="paddingEnd">@dimen/_17sdp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:thickness">1.34dp</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/black</item>
+
+    </style>
+</resources>

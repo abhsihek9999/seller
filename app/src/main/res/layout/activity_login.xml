@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hk.seller.login.presentation.viewmodel.LoginViewModel" />
+
+        <variable
+            name="activity"
+            type="com.hk.seller.login.presentation.view.LoginActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".login.presentation.view.LoginActivity">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ima_splash"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:contentDescription="@string/home"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/spalsh_bg" />-->
+
+        <ImageView
+            android:id="@+id/imag_k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_56sdp"
+            android:contentDescription="@string/kitchen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/splash_title_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/home"
+            app:layout_constraintBottom_toTopOf="@id/imag_k"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imag_k" />
+
+        <TextView
+            android:id="@+id/tv_sutitle"
+            style="@style/splash_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kitchen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+        <!--login window-->
+
+        <include
+            android:id="@+id/login_module"
+            layout="@layout/login_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:activity="@{activity}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:viewModel="@{viewModel}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

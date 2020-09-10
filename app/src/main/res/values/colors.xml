@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender_gray_c7c7c7">#FFC7C7C7</color>
+    <color name="black">#FE000000</color>
+    <color name="editext_box_pin_bg">#FF979797</color>
+    <color name="darkgray">#FFABABAB</color>
+    <color name="layout_bg">#FE000000</color>
+    <color name="grey_color_8D8D8D">#FF8D8D8D</color>
+    <color name="nav_bg">#1B1B1B</color>
+    <color name="card_bg">#252427</color>
+    <color name="yellow">#e7be79</color>
+    <color name="colorShimmer">#dddddd</color>
+    <color name="light_gray_cfced5">#cfced5</color>
+    <color name="battleship_gray_828282">#FF828282</color>
+    <color name="colorGrayMedium">#9B9B9B</color>
+    <color name="colorRedPrimary">#D22630</color>
+    <color name="notification_card_bg">#ff0f0f0f</color>
+    <color name="darkjunglegreen">#ff1b1b1b</color>
+    <color name="dimgray">#ff707070</color>
+    <color name="taupegray">#ff8a8a8a</color>
+    <color name="silverb8bbc6">#ffb8bbc6</color>
+    <color name="whitesmokef6f6f6">#fff6f6f6</color>
+    <color name="whitesmokef8f8f8">#fff8f8f8</color>
+    <color name="whitesmokef8f7f8">#fff8f7f8</color>
+    <color name="darkjunglegreen2524427">#ff252427</color>
+    <color name="ashgrayb9b9b9">#ffb9b9b9</color>
+    <color name="onyx0f0f0f">#ff0f0f0f</color>
+    <color name="taupe">#ff373539</color>
+    <color name="trollygray78817e">#ff78817e</color>
+    <color name="whitefefefe">#fffefefe</color>
+    <color name="darkjunglegreen2b2b2b">#ff2b2b2b</color>
+    <color name="darkjungleff1b1b1b">#ff1b1b1b</color>
+</resources>

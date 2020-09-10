@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:title="@string/home_navigation_title"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_explore"
+        android:enabled="true"
+        android:title="@string/nav_cat"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_fav"
+        android:enabled="true"
+        android:title="@string/nav_fav"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_orders"
+        android:enabled="true"
+        android:title="@string/nav_order"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_profiles"
+        android:enabled="true"
+        android:title="@string/nav_profile"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

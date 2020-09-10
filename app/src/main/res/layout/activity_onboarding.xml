@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboardingRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- BG COLORS CONTAINER -->
+    <FrameLayout
+        android:id="@+id/onboardingBackgroundContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- MAIN LAYOUT SECTION -->
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_signin"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bg"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <!-- ICON CONTAINER -->
+            <FrameLayout
+                android:id="@+id/onboardingContentIconContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+
+            <!-- TEXT CONTAINER -->
+            <FrameLayout
+                android:id="@+id/onboardingContentTextContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/onboardingPagerIconsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:baselineAligned="true"
+            android:gravity="bottom"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <!-- PAGER ICONS CONTAINER -->
+
+
+    <TextView
+        android:id="@+id/tv_signin"
+        style="@style/tv_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_signup"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/signin_bg"
+        android:gravity="center"
+        android:onClick="nextActivity"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/signin"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:id="@+id/tv_signup"
+        style="@style/tv_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/signup_bg"
+        android:gravity="center"
+        android:onClick="nextActivity"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/signup"
+        android:textAlignment="gravity"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
