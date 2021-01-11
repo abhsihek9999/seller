@@ -7,11 +7,11 @@
 
         <variable
             name="viewModel"
-            type="com.hk.seller.login.presentation.viewmodel.LoginViewModel" />
+            type="com.abhishek.seller.login.presentation.viewmodel.LoginViewModel" />
 
         <variable
             name="activity"
-            type="com.hk.seller.login.presentation.view.LoginActivity" />
+            type="com.abhishek.seller.login.presentation.view.LoginActivity" />
     </data>
 
 
@@ -91,7 +91,7 @@
                 android:contentDescription="@string/flag"
                  />
 
-            <com.hk.seller.utils.ClearableEditText
+            <com.abhishek.seller.utils.ClearableEditText
                 android:id="@+id/mobile_field"
                 style="@style/phonnumber_loin"
                 android:layout_width="match_parent"

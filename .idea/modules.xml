@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Application.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Application.iml" group="My_Application" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="My Application/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrypicker/countrypicker.iml" filepath="$PROJECT_DIR$/.idea/modules/countrypicker/countrypicker.iml" group="My Application/countrypicker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Application.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/My_Application.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/My_Application.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrypicker/My_Application.countrypicker.iml" filepath="$PROJECT_DIR$/.idea/modules/countrypicker/My_Application.countrypicker.iml" />
     </modules>
   </component>
 </project>
